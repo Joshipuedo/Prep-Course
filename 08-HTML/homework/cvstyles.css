@@ -1,0 +1,31 @@
+body {
+  background-color: aliceblue;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#hero {
+  background-color: #dfdfff;
+  font-family: Courier;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.personalDescription {
+  position: absolute;
+  right: 0px;
+  width: 200px;
+}
+
+#hero h1 {
+  font-size: 3rem;
+}
+
+#hero h2 {
+  font-size: 1rem;
+  color: #4d4d4d;
+}
