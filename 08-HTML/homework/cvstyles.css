@@ -1,31 +1,141 @@
+/*##########
+### General### 
+###########*/
+
 body {
   background-color: aliceblue;
+  line-height: 1em;
+  margin: 0;
 }
 
 * {
   box-sizing: border-box;
 }
 
-#hero {
+/*##########
+### Header### 
+###########*/
+
+header {
+  background: #333;
+  color: whitesmoke;
+  padding: 0.5rem 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-title {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation ul li {
+  display: inline-block;
+}
+
+.navigation ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.4s linear;
+  border-radius: 5px;
+}
+
+.navigation ul li a:hover {
+  background-color: rgb(63, 63, 63);
+}
+
+@media only screen and (max-width: 767px) {
+  .navigation {
+    width: 100%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+  .navigation ul li {
+    display: block;
+  }
+  .navigation ul li a {
+    display: block;
+    padding: 0.5rem 0;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+  }
+  .navigation ul li a:hover {
+    background-color: rgb(63, 63, 63);
+  }
+}
+
+/*##########
+#### Main#### 
+###########*/
+
+main {
+  padding-top: 3rem;
+}
+
+#title {
   background-color: #dfdfff;
-  font-family: Courier;
+  font-family: "Courier New", Courier, monospace;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+section {
+  width: 85%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
 .personalDescription {
   position: absolute;
-  right: 0px;
+  right: 100px;
   width: 200px;
+  padding-top: 1rem;
 }
 
 #hero h1 {
   font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 #hero h2 {
   font-size: 1rem;
   color: #4d4d4d;
+}
+
+img {
+  width: 100px;
+  height: auto;
+}
+
+/*##########
+### Footer### 
+###########*/
+
+.footer {
+  background-color: #4d4d4d;
+  padding: 0.5rem 0;
+  text-align: center;
+  margin-top: 6rem;
+  color: antiquewhite;
 }
